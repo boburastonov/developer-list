@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.Box {
+    width: 380px;
+    border: 1px solid #E2E2E2;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-right: 17px;
+    box-shadow: 0px 65px 85px -55px #ccc inset;
+    position: relative;
+}
+
+.Overlay {
+    /* visibility: hidden; */
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(255, 255, 255, .9);
+}
+
+.RemoveBtn {
+    color: #fff;
+    background-color: #EB200A;
+    font-size: 17px;
+    border: 0;
+    outline: 7px solid #EAE0DE;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.RemoveBtn:hover {
+    opacity: 0.9;
+}
+
+.RemoveBtn:active {
+    opacity: 0.8;
+}
+
+.Box:nth-child(3n) {
+    margin-right: 0;
+}
+
+.UserListTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.UserImg {
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.UserNickName {
+    margin: 0;
+    color: #050100;
+    font-size: 18px;
+}
+
+.UserName {
+    margin: 0;
+    color: #BCC9C7;
+}
+
+.UserInfoList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.UserInfoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E2E2;
+    border-bottom-width: 100%;
+}
+
+.UserInfoItem:last-child {
+    border-bottom: 0;
+}
+
+.Left {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8B9196;
+}
+
+.Right {
+    color: #190100;
+}
