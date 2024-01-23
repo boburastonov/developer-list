@@ -3,7 +3,7 @@
 }
 
 .Box {
-    width: 380px;
+    width: 370px;
     border: 1px solid #E2E2E2;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -12,10 +12,15 @@
     padding-right: 17px;
     box-shadow: 0px 65px 85px -55px #ccc inset;
     position: relative;
+    transition: all 50s ease-in;
+}
+
+.Box:hover .Overlay{
+    visibility: visible;
 }
 
 .Overlay {
-    /* visibility: hidden; */
+    visibility: hidden;
     width: 60%;
     height: 60%;
     top: 50%;
@@ -47,9 +52,6 @@
     opacity: 0.8;
 }
 
-.Box:nth-child(3n) {
-    margin-right: 0;
-}
 
 .UserListTop {
     display: flex;

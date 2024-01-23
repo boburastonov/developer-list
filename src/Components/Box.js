@@ -11,8 +11,9 @@ export default function Box() {
     setList(newList);
   }
 
-  return MockData.map((item) => (
-      <div key={item.userId} className={classes.Box} onMouseEnter={() => console.log('hello')} onMouseLeave={() => console.log('bye')}>
+
+  return list.map((item) => (
+      <div key={item.userId} className={classes.Box}>
         <div className={classes.Overlay}>
           <button onClick={() => removeBox(item.userId)} className={classes.RemoveBtn}>Remove User</button>
         </div>
